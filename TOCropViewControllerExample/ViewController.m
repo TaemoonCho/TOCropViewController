@@ -17,10 +17,8 @@
 
 - (void)showCropViewController;
 - (void)sharePhoto;
-
 - (void)layoutImageView;
 - (void)didTapImageView;
-
 @end
 
 @implementation ViewController

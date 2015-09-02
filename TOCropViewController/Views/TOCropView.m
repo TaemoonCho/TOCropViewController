@@ -514,13 +514,16 @@ typedef NS_ENUM(NSInteger, TOCropViewOverlayEdge) {
         
         [self layoutInitialImage];
         [self checkForCanReset];
+        [self setAspectLockEnabledWithAspectRatio:CGSizeMake(1.0f, 1.0f) animated:animated];
         return;
     }
     
     [UIView animateWithDuration:0.5f delay:0.0f usingSpringWithDamping:1.0f initialSpringVelocity:0.7f options:0 animations:^{
         [self layoutInitialImage];
         [self checkForCanReset];
+        [self setAspectLockEnabledWithAspectRatio:CGSizeMake(1.0f, 1.0f) animated:NO];
     } completion:nil];
+
 }
 
 #pragma mark - Gesture Recognizer -

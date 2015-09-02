@@ -28,11 +28,9 @@
 @property (nonatomic, copy) void (^cancelButtonTapped)(void);
 @property (nonatomic, copy) void (^doneButtonTapped)(void);
 @property (nonatomic, copy) void (^rotateButtonTapped)(void);
-@property (nonatomic, copy) void (^clampButtonTapped)(void);
 @property (nonatomic, copy) void (^resetButtonTapped)(void);
 
 /* Aspect ratio button settings */
-@property (nonatomic, assign) BOOL clampButtonGlowing;
 @property (nonatomic, readonly) CGRect clampButtonFrame;
 
 /* Disable the rotate button */
